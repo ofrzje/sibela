@@ -1,0 +1,219 @@
+#header {
+	background: #589A8D;
+	display: flex;
+	padding: 5px;
+}
+
+#header div {
+	text-align: center;
+	font-family: "Overpass", sans-serif;
+	font-style: normal;
+	color: rgba(16, 56, 104, 0.67);
+}
+
+#header div img {
+	padding: 0;
+}
+
+nav {
+	background: #8FC1B5;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navbar-brand {
+  padding: 0 1rem;
+}
+
+nav a {
+	padding: 1rem;
+  font-size: 16px;
+	font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #47638C;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.about-title {
+  text-align: center;
+  margin: 1rem;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0A9F84;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 8px;
+}
+
+.team-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.team-card-socialmedia {
+  display: flex;
+}
+
+.team-card-socialmedia a {
+  fill: #3D3D3D;
+  margin-right: 0.5rem;
+}
+
+.team-card-socialmedia a:hover  {
+  fill: #0072b1;
+}
+
+.team-image {
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.team-card-info {
+  margin: 1rem;
+}
+
+.team-card-info p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.team-card-info h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #16BD9F;
+  margin-right: 0.5rem;
+}
+
+.about-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin: 1rem;
+}
+
+.about-card-header img {
+  object-fit: cover;
+  object-position: center;
+  max-height: 200px;
+  width: 100%;
+}
+
+.about-card-body {
+  padding: 2rem;
+}
+
+.footer {
+  background: #589A8D;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	font-weight: bold;
+  margin-top: 2rem;
+	padding: 16px 0;
+	color: white;
+}
+
+@media (min-width: 768px) {
+  .parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: normal;
+  }
+
+  .card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 100%;
+  }
+
+  .about-card-header img {
+    max-height: 500px;
+  }
+
+  .about-card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  #about {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 0;
+  }
+
+  .about-team {
+    max-width: 500px;
+  }
+
+  .team-card {
+    width: 200px;
+  }
+
+  .about-title {
+    font-size: 48px;
+    margin-bottom: 3rem;
+  }
+
+  .about-card {
+    max-width: 500px;
+  }
+
+  .about-card-body {
+    padding: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #about {
+    justify-content: center;
+  }
+
+  .about-card-header img {
+    max-height: 600px;
+  }
+
+  .about-card {
+    max-width: 500px;
+  }
+
+  .about-team {
+    margin-right: 3rem;
+  }
+
+  .about-app {
+    margin-left: 3rem;
+  }
+}
