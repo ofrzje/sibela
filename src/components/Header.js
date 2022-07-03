@@ -4,7 +4,7 @@ import logo from "../images/logo.png";
 const Header = () => {
   return (
     <div>
-      <section id="header">
+      <section data-testid="logo-1" id="header">
         <div className="navbar-brand">
           <img src={logo} alt="logo" width="85" height="85" />
           <h2>SIBELA</h2>
